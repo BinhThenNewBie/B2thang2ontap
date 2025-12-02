@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="B2thang2ontap:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>B2thang2ontap</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="B2thang2ontap-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="B2thang2ontap:war exploded" />
+    </root>
+  </artifact>
+</component>
