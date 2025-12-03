@@ -31,14 +31,7 @@
 
 
 
-
-
-
-
 </form>
-
-
-
 
     <table style="border-collapse: collapse" border="1">
        <thead>
