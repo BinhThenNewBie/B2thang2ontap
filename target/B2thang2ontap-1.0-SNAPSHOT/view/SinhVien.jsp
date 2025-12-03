@@ -22,23 +22,16 @@
     <label>que</label>
     <input type="text" name="que" value="${detail.que}"><br>
     <label>nganh</label>
-    <input type="text" value="${detail.nganh}"><br>
+    <input type="text" name="nganh" value="${detail.nganh}"><br>
     <label>gioitinh</label>
-    <input type="radio" name="gt" value="true"${detail. isGioitinh()? "checked" : ""}> Con hang
-    <input type="radio" name="gt" value="false"${detail. isGioitinh()==false? "checked" : ""}> Het hang<br>
+    <input type="radio" name="gt" value="true"${detail.isGioitinh()? "checked" : ""}>Nam
+    <input type="radio" name="gt" value="false"${detail.isGioitinh()==false? "checked" : ""}>Nu<br>
     <label>namsinh</label>
-    <input type="text" value="${detail.namsinh}"><br>
-
-
-
-
+    <input type="text" name="namsinh" value="${detail.namsinh}"><br>
 
 
 
 </form>
-
-
-
 
     <table style="border-collapse: collapse" border="1">
        <thead>
