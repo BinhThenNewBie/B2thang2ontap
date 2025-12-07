@@ -62,4 +62,15 @@ public class Repo_SinhVien {
             return null;
         }
     }
+    public int delete(String id){
+        sql = "delete sinhvien where id = ?";
+        try{
+            ps = con.prepareStatement(sql);
+            ps.setObject(1,id);
+             return ps.executeUpdate();
+        }catch (Exception e){
+            e.printStackTrace();
+            return 0;
+        }
+    }
 }

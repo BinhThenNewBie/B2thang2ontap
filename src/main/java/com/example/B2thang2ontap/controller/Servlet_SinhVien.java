@@ -26,6 +26,12 @@ public class Servlet_SinhVien extends HttpServlet {
             ArrayList<SinhVien> lstsv = repo.getAll();
             request.setAttribute("lstsv", lstsv);
             request.getRequestDispatcher("/view/SinhVien.jsp").forward(request,response);
+        }else if(uri.contains("/delete")){
+            String id = request.getParameter("id");
+            repo.delete(id);
+            ArrayList<SinhVien> lstsv = repo.getAll();
+            request.setAttribute("lstsv", lstsv);
+            request.getRequestDispatcher("/view/SinhVien.jsp").forward(request,response);
         }
     }
 

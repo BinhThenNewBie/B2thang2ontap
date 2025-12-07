@@ -57,6 +57,7 @@
             <td>${lst.isGioitinh()? "Nam" : "Nu"}</td>
             <td>${lst.namsinh}</td>
             <td><a href="/detail?id=${lst.id}"><button>detail</button></a></td>
+            <td><a href="/delete?id=${lst.id}"><button>delete</button></a></td>
         </tr>
 
 
